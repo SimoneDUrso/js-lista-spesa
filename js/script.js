@@ -8,7 +8,14 @@ const lista_spesa = document.getElementById("lista-spesa");
 let i = 0;
 while (i < ingredienti.length) {
 
+    // CREO IL LIST-ITEM
+    const li = document.createElement("li");
 
+    // INSERIMENTO DEL TESTO ALL'INTERNO
+    li.innerText = ingredienti[i];
+
+    // APPENDO IL LIST-ITEM DENTRO LA UL
+    lista_spesa.append(li);
 
     i++;
 }
